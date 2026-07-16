@@ -1,0 +1,49 @@
+order_id,date,region,channel,product,category,quantity,unit_price,cost_per_unit,customer_segment
+1001,2026-04-01,Kyiv,Online,CRM Pro,Software,2,4500,900,SMB
+1002,2026-04-02,Lviv,Partner,AI Support Bot,Software,1,7800,1500,Enterprise
+1003,2026-04-03,Odesa,Online,Analytics Dashboard,Software,3,3200,800,SMB
+1004,2026-04-05,Kharkiv,Direct,Data Audit,Service,1,12000,3500,Enterprise
+1005,2026-04-07,Kyiv,Online,AI Support Bot,Software,2,7800,1500,SMB
+1006,2026-04-10,Dnipro,Partner,CRM Pro,Software,1,4500,900,SMB
+1007,2026-04-12,Lviv,Direct,Analytics Dashboard,Software,2,3200,800,Startup
+1008,2026-04-15,Kyiv,Online,Data Audit,Service,1,12000,3500,Enterprise
+1009,2026-05-01,Odesa,Partner,CRM Pro,Software,3,4500,900,SMB
+1010,2026-05-02,Kharkiv,Online,AI Support Bot,Software,1,7800,1500,Enterprise
+1011,2026-05-04,Kyiv,Direct,Analytics Dashboard,Software,4,3200,800,SMB
+1012,2026-05-06,Lviv,Online,Data Audit,Service,1,12000,3500,Enterprise
+1013,2026-05-09,Dnipro,Online,CRM Pro,Software,2,4500,900,Startup
+1014,2026-05-11,Odesa,Direct,AI Support Bot,Software,1,7800,1500,SMB
+1015,2026-05-14,Kyiv,Partner,Analytics Dashboard,Software,2,3200,800,Startup
+1016,2026-05-18,Kharkiv,Online,CRM Pro,Software,1,4500,900,SMB
+1017,2026-06-01,Kyiv,Online,AI Support Bot,Software,3,7800,1500,Enterprise
+1018,2026-06-03,Lviv,Direct,CRM Pro,Software,2,4500,900,SMB
+1019,2026-06-06,Odesa,Online,Analytics Dashboard,Software,3,3200,800,Startup
+1020,2026-06-08,Dnipro,Partner,Data Audit,Service,1,12000,3500,Enterprise
+1021,2026-06-12,Kyiv,Direct,CRM Pro,Software,2,4500,900,SMB
+1022,2026-06-15,Kharkiv,Online,Analytics Dashboard,Software,5,3200,800,SMB
+1023,2026-06-19,Lviv,Partner,AI Support Bot,Software,1,7800,1500,Enterprise
+1024,2026-06-22,Odesa,Online,Data Audit,Service,1,12000,3500,Enterprise
+1025,2026-07-02,Kyiv,Partner,CRM Pro,Software,3,4500,900,Enterprise
+1026,2026-07-04,Lviv,Online,AI Support Bot,Software,2,7800,1500,SMB
+1027,2026-07-07,Kharkiv,Direct,Data Audit,Service,1,12000,3500,Enterprise
+1028,2026-07-10,Dnipro,Online,Analytics Dashboard,Software,4,3200,800,Startup
+1029,2026-07-14,Odesa,Partner,CRM Pro,Software,2,4500,900,SMB
+1030,2026-07-18,Kyiv,Direct,AI Support Bot,Software,1,7800,1500,Enterprise
+1031,2026-07-23,Lviv,Online,Data Audit,Service,2,12000,3500,Enterprise
+1032,2026-07-28,Kharkiv,Partner,Analytics Dashboard,Software,3,3200,800,SMB
+1033,2026-08-01,Dnipro,Direct,CRM Pro,Software,2,4500,900,Startup
+1034,2026-08-03,Kyiv,Online,AI Support Bot,Software,4,7800,1500,Enterprise
+1035,2026-08-06,Odesa,Partner,Data Audit,Service,1,12000,3500,SMB
+1036,2026-08-09,Lviv,Direct,Analytics Dashboard,Software,5,3200,800,Startup
+1037,2026-08-13,Kharkiv,Online,CRM Pro,Software,3,4500,900,SMB
+1038,2026-08-17,Dnipro,Partner,AI Support Bot,Software,1,7800,1500,Enterprise
+1039,2026-08-21,Kyiv,Direct,Data Audit,Service,1,12000,3500,Enterprise
+1040,2026-08-26,Odesa,Online,Analytics Dashboard,Software,2,3200,800,SMB
+1041,2026-09-02,Lviv,Partner,CRM Pro,Software,4,4500,900,SMB
+1042,2026-09-05,Kharkiv,Online,AI Support Bot,Software,2,7800,1500,Enterprise
+1043,2026-09-08,Dnipro,Direct,Data Audit,Service,1,12000,3500,Enterprise
+1044,2026-09-12,Kyiv,Partner,Analytics Dashboard,Software,3,3200,800,Startup
+1045,2026-09-16,Odesa,Online,CRM Pro,Software,2,4500,900,SMB
+1046,2026-09-20,Lviv,Direct,AI Support Bot,Software,1,7800,1500,Enterprise
+1047,2026-09-24,Kharkiv,Partner,Data Audit,Service,2,12000,3500,SMB
+1048,2026-09-28,Dnipro,Online,Analytics Dashboard,Software,4,3200,800,Startup
