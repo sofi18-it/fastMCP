@@ -31,7 +31,7 @@ def safe_csv_path(file_name: str) -> Path:
     return candidate
 
 @mcp.tool
-def load_sales_summary(file_name: str = "sales_summary.csv") -> dict[str, object]:
+def load_sales_summary(file_name: str = "sales_data.csv") -> dict[str, object]:
     orders = 0
     revenue = 0.0
     gross_profit = 0.0
@@ -64,6 +64,60 @@ def load_sales_summary(file_name: str = "sales_summary.csv") -> dict[str, object
             "gross_margin_pct": round(gross_profit / revenue * 100, 2) if revenue else 0
         }
 
+@mcp.tool
+def sales_by_region(file_name: str = "sales_data.csv") -> dict[str, object]:
+    with safe_csv_path(file_name).open(encoding="utf-8", newline="") as file:
+        reader = csv.DictReader(file)
+
+        required_columns = {
+            "region",
+            "quantity",
+            "unit_price",
+            "cost_per_unit",
+        }
+
+        missing_columns = required_columns.difference(reader.fieldnames or [])
+
+        if missing_columns:
+            raise ValueError(f"Missing CSV columns {sorted(missing_columns)}")
+
+        regions = {}
+
+        for row in reader:
+            region = row["region"]
+            quantity = int(row["quantity"])
+            unit_price = float(row["unit_price"])
+            cost_per_unit = float(row["cost_per_unit"])
+
+            revenue = quantity * unit_price
+            gross_profit = quantity * (unit_price - cost_per_unit)
+
+            if region not in regions:
+                regions[region] = {
+                    "region": region,
+                    "orders": 0,
+                    "revenue_uah": 0.0,
+                    "gross_profit_uah": 0.0,
+                }
+
+            regions[region]["orders"] += 1
+            regions[region]["revenue_uah"] += revenue
+            regions[region]["gross_profit_uah"] += gross_profit
+
+    result = sorted(
+        regions.values(),
+        key=lambda item: item["revenue_uah"],
+        reverse=True,
+    )
+
+    for item in result:
+        item["revenue_uah"] = round(item["revenue_uah"], 2)
+        item["gross_profit_uah"] = round(item["gross_profit_uah"], 2)
+
+    return {
+        "file": file_name,
+        "regions": result,
+    }
 
 @mcp.resource("sales://metrics-definitions")
 def metric_definitions_resource() -> str:
